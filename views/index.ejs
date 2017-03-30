@@ -1,0 +1,12 @@
+<% include partials/header %>
+<h1> Welcome to the Small Project on the dataset DBLP using MongoDB</h1>
+
+<h3>Complete Liste of articles from </h3>
+<br><br>
+<ul>
+<% docs.forEach(function(doc){ %>
+<li><%= doc.title %></li>
+<% }) %>
+</ul>
+<br><br>
+<% include partials/footer %>
